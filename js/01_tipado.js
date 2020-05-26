@@ -38,3 +38,19 @@ jugador2 = {
     apellidos: 'Ronaldo'
     // edad: 40 no podemos poner propiedades que no existen en el tipo
 };
+var referencia;
+referencia = 435678;
+referencia = '00004356789';
+var toby;
+toby = 'Pastor Alemán'; // Deberá tener uno de los valores-tipo permitidos
+// Tipado de funciones (parámetros y salida)
+function suma(a, b) {
+    return a + b;
+}
+resultado = suma(4, 2);
+// Parámetros opcionales en las funciones
+function multiplicacion(a, b, mensaje) {
+    var resultado = a * b;
+    return mensaje ? mensaje + " " + resultado : "El resultado es " + resultado;
+}
+console.log(multiplicacion(2, 4));
