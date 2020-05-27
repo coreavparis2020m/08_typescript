@@ -101,10 +101,11 @@ console.log(multiplicacion(2, 4));
 
 // Tipos genéricos (el tipo se define en la invocación de la función)
 
-function getResultado (a) {
+function getResultado<T> (a: T): T {
     // ...
-    return a;  // Aquí fue donde 'cascó'
+    return a;  
 }
 
-let b;
+let b = getResultado<string>('Hola Mundo!'); 
+let c = getResultado<number>(56);
 
